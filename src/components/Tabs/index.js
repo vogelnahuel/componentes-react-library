@@ -1,2 +1,2 @@
-export { TabsComponent } from './TabsComponent.jsx'
-export { TabCustomRandom } from './TabCustomRandom.jsx'
+export { TabsCustomComponent } from './TabsCustomComponent.jsx'
+export { TabCustomComponent } from './TabCustomComponent.jsx'
