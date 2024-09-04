@@ -3,12 +3,14 @@
   "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
-  "module":"dist/index.es.js",
+  "module": "dist/index.es.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "predeploy": "npm run build-storybook",
+    "deploy": "gh-pages -d storybook-static",
     "build-lib": "rollup -c"
   },
   "author": "vogelnahuel",
@@ -28,6 +30,7 @@
     "@storybook/react-vite": "^8.2.9",
     "@storybook/react-webpack5": "^8.2.9",
     "@storybook/test": "^8.2.9",
+    "gh-pages": "^6.1.1",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -35,10 +38,24 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.0.14",
+    "@mui/icons-material": "^6.0.1",
+    "@mui/material": "^6.0.1",
+    "@mui/styled-engine-sc": "^6.0.1",
+    "styled-components": "^6.1.12",
     "storybook": "^8.2.9"
   },
   "peerDependencies": {
     "react": "^18.3.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.0.14",
+    "@mui/icons-material": "^6.0.1",
+    "@mui/material": "^6.0.1",
+    "@mui/styled-engine-sc": "^6.0.1",
+    "styled-components": "^6.1.12",
     "react-dom": "^18.3.1"
   }
 }
