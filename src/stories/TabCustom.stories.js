@@ -1,6 +1,6 @@
 // src/components/TabCustomRandom/TabCustomRandom.stories.jsx
 import React from 'react';
-import TabCustomRandom from '../components/Tabs/TabCustomRandom';
+import { TabCustomRandom } from '../components/Tabs/TabCustomRandom';
 
 export default {
   title: 'Components/TabCustomRandom',

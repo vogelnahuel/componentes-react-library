@@ -1,7 +1,7 @@
 // src/components/TabsComponent/TabsComponent.stories.jsx
 import React, { useState } from 'react';
-import TabsComponent from '../components/Tabs/TabsComponent';
-import TabCustomRandom from '../components/Tabs/TabCustomRandom';
+import { TabsComponent } from '../components/Tabs/TabsComponent';
+import { TabCustomRandom } from '../components/Tabs/TabCustomRandom';
 
 export default {
   title: 'Components/TabsComponent',
